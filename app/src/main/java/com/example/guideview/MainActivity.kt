@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         guide4 = findViewById<GuideView>(R.id.guide4)
         guide5 = findViewById<GuideView>(R.id.guide5)
 
-        initGuide(1)
+        initGuide(15)
     }
 
     fun initGuide(index: Int) {
@@ -105,6 +105,7 @@ class MainActivity : AppCompatActivity() {
                 it.isEnabled = true
                 it.isClickable = true
                 it.setRectF(rectF)
+                it.setMore(true)
             }
         }
 
