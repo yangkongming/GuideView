@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.guideview.GuideView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/guide4_gv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <View
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
+        android:layout_marginEnd="@dimen/dp44"
+        android:layout_marginRight="@dimen/dp44"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/base_guide4_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp22"
+        android:layout_marginEnd="@dimen/dp22"
+        android:layout_marginRight="@dimen/dp22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/home_icon_close" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/base_guide4_next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/base_guide_left" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp4"
+        android:text="12156151"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="9dp"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:srcCompat="@mipmap/base_guide_right" />
+
+    <TextView
+        android:id="@+id/base_guide4_next"
+        android:layout_width="@dimen/dp106"
+        android:layout_height="@dimen/dp30"
+        android:background="@drawable/bg_round_dp5_bg1ccf9e"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp36"
+        android:paddingTop="@dimen/dp4"
+        android:paddingRight="@dimen/dp36"
+        android:paddingBottom="@dimen/dp4"
+        android:text="next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</com.example.guideview.GuideView>
